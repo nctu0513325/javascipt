@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(33, 32, 36);
+    background-image: url(school.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+ul {
+    color: white;
+}
+
+h3,
+blockquote {
+    color: white;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:liNK {
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(55, 0, 255);
+    margin: auto;
+    width: 200px;
+}
+
+p {
+    font-size: 24px;
+    color: purple;
+}
+
+footer {
+    clear: both;
+}
