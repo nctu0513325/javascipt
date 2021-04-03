@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(68, 66, 66);
+    height: 1000px;
+}
+/*卡片外觀設定*/
+.card_table{
+    background-color:rgb(94, 97, 97);  
+    float: left;
+    width: 500px;
+    text-align:center;
+    /*邊距設定*/
+    margin-top: 10px;
+    margin-left: 100px;
+    /*table樣式設定*/
+    border: 4px solid;
+    border-collapse: collapse;
+    border-color: aliceblue;
+    /*字型設定*/
+    font-style: italic;
+    font-family: Arial;
+    color : white;
+}
+
+/*按鈕外觀設定*/
+.btn{
+    border-radius: 16px;
+    position: relative;
+    left:880px; 
+    width:140px;height:50px
+}
+
+h2{
+    color: white;
+}
