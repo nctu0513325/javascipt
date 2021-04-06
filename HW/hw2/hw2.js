@@ -4,7 +4,7 @@ one = [1]; two = [2]; three = [3]; four = [4]; five = [5]; six = [6];           
 Gen_num(one); Gen_num(two); Gen_num(three); Gen_num(four); Gen_num(five); Gen_num(six);                     //產生卡片數字
 Show_table(one); Show_table(two); Show_table(three); Show_table(four); Show_table(five); Show_table(six);   //製作卡片
 
-//函數--產生卡片陣列
+//函式--產生卡片陣列
 function Gen_num( number ){
     var set = 6 - number[0];
     var y = new Array();
@@ -26,14 +26,15 @@ function Gen_num( number ){
     }    
 }
 
-// 函數---製作數字卡片表格
+// 函式---製作數字卡片表格
 function Show_table( number ){
-    document.write("<table border='1'"); 
+    document.write("<h3>")
+    document.write("<table border='1' class = 'card_table'"); 
     document.write("<tr>");
     document.write("<td align = 'center' colspan = '8'> card number "+ number[0] +
                     "<input type = 'checkbox' name = 'card' value = " + number[0] + "/> </td>");  //第一列顯示第幾張卡片
     document.write("</tr>");
-    //利用for迴圈產生剩下的數字
+    //利用for迴圈產生該表格對應的數字
     for(var i = 1; i<number.length; i++){
         document.write("<tr>");
         for(var k = 0; k < 8; k++){
@@ -43,6 +44,7 @@ function Show_table( number ){
         document.write("</tr>");
         i--;
     }   
+    document.write("</h3>")
 }
 //函式---按下確定鈕
 function Btn_Click(){
