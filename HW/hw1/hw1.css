@@ -29,7 +29,7 @@ a:link {
 }
 
 #p-title {
-    color: rgb(55, 0, 255);
+    color: rgb(255, 72, 0);
     margin: auto;
     width: 200px;
 }
@@ -43,12 +43,11 @@ footer {
     clear: both;
 }
 
-#menu {
+#list-div {
     margin: auto;
 }
 
 .list-name {
-    width: 200px;
     margin: auto;
     background-color: red;
     color: white;
@@ -63,13 +62,14 @@ footer {
 }
 
 .list-name:hover {
-    background-color: #58f332;
+    background-color: black;
 }
 
 
 /**/
 
-.list-sub {
+.list-item {
+    margin: auto;
     background-color: gray;
     color: white;
     font-family: 微軟正黑體;
@@ -81,4 +81,16 @@ footer {
 
 .list {
     float: left;
+}
+
+.list-item li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #777;
+    list-style-type: none;
+}
+
+#list-block {
+    width: 100%;
+    background-color: white;
 }
