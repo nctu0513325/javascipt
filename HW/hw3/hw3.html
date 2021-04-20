@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<head>
+    <title>HW3</title>
+    <script type="text/javascript">
+        function Shape(name, sides, sideLength) {
+            this.name = name;
+            this.sides = sides;
+            this.sideLength = sideLength;
+        }
+        Shape.prototype.calcPerimeter = function() {
+            document.writeln("<br>the name of the shape is " + this.name +
+                " and the perimeter is " + this.sides * this.sideLength);
+        };
+
+        var triangle = new Shape("triangle", 3, 5);
+        triangle.calcPerimeter();
+
+        class Square extends Shape {
+            constructor(sideLength) {
+                super();
+                this.sideLength = sideLength;
+                this.sides = 4;
+                this.name = "square";
+            }
+            calcArea() {
+                document.writeln("the name of this shape is " + this.name +
+                    " the area of this shape is " + this.sides * this.sides);
+            }
+        }
+
+        let Square1 = new Square(5);
+        Square1.calcArea();
+        Square1.calcPerimeter();
+    </script>
+</head>
+
+</html>
