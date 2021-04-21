@@ -7,6 +7,9 @@
     padding: 0;
 }
 
+
+/*背景CSS設定*/
+
 body {
     background-color: rgb(33, 32, 36);
     background-image: url(school.png);
@@ -15,9 +18,8 @@ body {
     background-size: contain;
 }
 
-h3,
-blockquote {
-    color: white;
+.cont {
+    float: left;
 }
 
 a:hover {
@@ -34,17 +36,19 @@ a:link {
     width: 200px;
 }
 
-p {
-    font-size: 24px;
-    color: purple;
-}
-
 footer {
     clear: both;
 }
 
+
+/* list CSS 設定*/
+
 #list-div {
     margin: auto;
+}
+
+.list {
+    float: left;
 }
 
 .list-name {
@@ -65,9 +69,6 @@ footer {
     background-color: black;
 }
 
-
-/**/
-
 .list-item {
     margin: auto;
     background-color: gray;
@@ -79,10 +80,6 @@ footer {
     width: 100px;
 }
 
-.list {
-    float: left;
-}
-
 .list-item li {
     height: 30px;
     line-height: 30px;
@@ -90,7 +87,25 @@ footer {
     list-style-type: none;
 }
 
-#list-block {
-    width: 100%;
-    background-color: white;
+
+/*內容CSS設定*/
+
+#content-div {
+    margin: auto;
+    width: 1000px;
+}
+
+.content {
+    text-align: center;
+    float: left;
+}
+
+.cont {
+    width: 500px;
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    float: right;
 }
