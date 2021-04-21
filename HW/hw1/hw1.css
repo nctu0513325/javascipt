@@ -1,7 +1,4 @@
 @charset "UTF-8";
-
-/**/
-
 * {
     margin: 0;
     padding: 0;
@@ -105,6 +102,9 @@ footer {
     text-align: center;
     color: white;
 }
+
+
+/* footer css 設定*/
 
 h4 {
     float: right;
