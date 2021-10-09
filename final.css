@@ -1,0 +1,38 @@
+/*設定各圖像大小與顏色*/
+
+#container {
+    width: 880px;
+    height: 800px;
+    position: relative;
+    background: rgb(14, 196, 202);
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50em;
+    background-color: red;
+}
+
+.plate {
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+}
+
+
+/*因為須根據不同方塊產生不同顏色，故鄉觀顏色設定於JS中設定*/
+
+.block {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+}
+
+.item {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: yellow;
+}
